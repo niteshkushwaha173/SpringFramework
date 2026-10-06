@@ -1,0 +1,16 @@
+package in.sp.main;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import in.sp.beans.Employee;
+
+public class Main {
+public static void main(String[] args) throws ClassNotFoundException 
+{
+	
+	ApplicationContext context = new AnnotationConfigApplicationContext(JavaAppConfig.class);
+	Employee emp = context.getBean("empDetails", Employee.class);   // bean id = method ka naam
+	emp.display();
+}
+}

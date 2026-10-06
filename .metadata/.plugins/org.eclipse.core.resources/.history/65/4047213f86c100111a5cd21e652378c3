@@ -1,0 +1,24 @@
+package in.sp.beans;
+
+public class HRDepartment implements Department{
+	private String deptName;
+	private String hrManager;
+	private int openPositions;
+	
+	public HRDepartment() { }
+	
+	public void setDeptName(String deptName) {
+		this.deptName = deptName;
+	}
+	public void setHrManager(String hrManager) {
+		this.hrManager = hrManager;
+	}
+	public void setOpenPositions(int openPositions) {
+		this.openPositions = openPositions;
+	}
+	public String getDeptDetails() {
+		return "| DeptName"+deptName+"| HRManager"+hrManager+"| OpenPositions"+openPositions;
+
+	}
+
+}

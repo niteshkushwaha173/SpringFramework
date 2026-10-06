@@ -1,0 +1,9 @@
+package in.sp.beans;
+
+public class Department {
+
+	public String getDeptDetails() {
+		return null;
+	}
+
+}

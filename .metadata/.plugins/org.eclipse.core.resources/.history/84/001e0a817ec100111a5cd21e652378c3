@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- bean definitions here -->
+	<bean class="in.sp.beans.ITDepartment" id="itDept">
+		<property name="deptName" value="IT" />
+		<property name="techStack" value="Java, Spring" />
+		<property name="projectCount" value="5" />
+	</bean>
+
+	<bean id="hrDept" class="in.sp.beans.HRDepartment">
+		<property name="deptName" value="HR" />
+		<property name="hrManager" value="Ravi" />
+		<property name="openPositions" value="3" />
+	</bean>
+	<bean class="in.sp.beans.Address" id="address">
+		<property name="houseno" value="1234" />
+		<property name="street" value="GB Road" />
+		<property name="city" value="Noida" />
+		<property name="state" value="Uttar Pradesh" />
+		<property name="pincode" value="123443" />
+	</bean>
+	<bean class="in.sp.beans.Employee" id="emp" autowire="byType">
+		<property name="e_id" value="1234" />
+		<property name="e_name" value="NItesh" />
+		<property name="e_salary" value="25000" />
+		<!-- <property name="state" value="Uttar Pradesh" /> <property name="pincode" 
+			value="123443" /> -->
+	</bean>
+</beans>

@@ -1,0 +1,22 @@
+package in.sp.beans;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Component;
+@Component
+//@Primary
+public class ITDepartment implements Department {
+	@Value("Developer")
+	private String deptName;
+	@Value("Spring ,spring boot,Rest")
+	private String techStack;
+	@Value("12")
+	private int projectCount;
+	
+	@Override
+	public String getDeptDetails() {
+		return deptName + " | Tech: " + techStack + " | Projects: " + projectCount;
+
+	}
+
+}

@@ -1,0 +1,27 @@
+package in.sp.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import in.sp.beans.Address;
+import in.sp.beans.Employee;
+
+@Configuration
+public class JavaAppConfig {
+@Bean
+public Address empAddress() {
+	Address add=new Address();
+	add.setHouseno(1234);
+	add.setStreet("Mira Road");
+	add.setCity("Nalasopara");
+	add.setState("Mumbai");
+	add.setPincode(274304);
+}
+@Bean
+public Employee empDetails() {
+	Employee emp=new Employee();
+	emp.setE_id(1);
+	emp.setE_name("Nitesh");
+	emp.setSalary(25000);
+}
+}

@@ -1,0 +1,27 @@
+package in.sp.main;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import in.sp.beans.Employee;
+
+public class Main {
+public static void main(String[] args) 
+{
+	Class<?> c;
+	try {
+		c = Class.forName("in.sp.beans.HRDepartment");
+	} catch (ClassNotFoundException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	System.out.println("Loaded from: " + c.getProtectionDomain().getCodeSource().getLocation());
+	for (java.lang.reflect.Method m : c.getDeclaredMethods()) {
+	    System.out.println(m.getName());
+	}
+	ApplicationContext context=new ClassPathXmlApplicationContext("/in/sp/resources/applicationContext.xml");
+							//context.getBean("emp1", Employee.class)
+		Employee emp1=(Employee)context.getBean("emp");
+		emp1.display();
+}
+}

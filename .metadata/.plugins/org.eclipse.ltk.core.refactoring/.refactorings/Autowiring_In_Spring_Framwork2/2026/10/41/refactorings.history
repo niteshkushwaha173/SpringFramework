@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Address.java&apos; to &apos;Autowiring_In_Spring_Framwork3/src/in.sp.beans&apos;&#x0D;&#x0A;- Original project: &apos;Autowiring_In_Spring_Framwork2&apos;&#x0D;&#x0A;- Destination element: &apos;Autowiring_In_Spring_Framwork3/src/in.sp.beans&apos;&#x0D;&#x0A;- Original element: &apos;in.sp.beans.Address.java&apos;" description="Copy compilation unit" destination="=Autowiring_In_Spring_Framwork3/src&lt;in.sp.beans" element1="/src&lt;in.sp.beans{Address.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1791263931571" units="1" version="1.0"/>
+</session>
